@@ -37,8 +37,8 @@ namespace GradeBook.GradeBooks
                 return 'C';
             else if (betterGrade > top60Percent && betterGrade <= top80Percent)
                 return 'D';
-            else
-                return 'F';
+
+            return 'F';
         }
     }
 }
