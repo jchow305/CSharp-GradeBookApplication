@@ -24,10 +24,10 @@ namespace GradeBook.GradeBooks
                     betterGrade += 1;
             }
 
-            var top20Percent = Students.Count * 0.2;
-            var top40Percent = Students.Count * 0.4;
-            var top60Percent = Students.Count * 0.6;
-            var top80Percent = Students.Count * 0.8;
+            var top20Percent = (int)Math.Ceiling(Students.Count * 0.2);
+            var top40Percent = (int)Math.Ceiling(Students.Count * 0.4);
+            var top60Percent = (int)Math.Ceiling(Students.Count * 0.6);
+            var top80Percent = (int)Math.Ceiling(Students.Count * 0.8);
 
             if (betterGrade <= top20Percent)
                 return 'A';
